@@ -1,43 +1,50 @@
-# Melatonin-Product-Analysis
+# Melatonin Product Analysis on E-Commerce Platforms
 
 
-Introduction
-This repository contains the analysis of various melatonin products sold on an e-commerce platform. The data spans several products, focusing on customer reviews, ratings, and product details. The analysis aims to uncover insights into product popularity, customer satisfaction, and potential areas for data quality improvement.
+## Introduction
+This repository provides an in-depth analysis of melatonin products available on an e-commerce platform.
+It focuses on customer reviews, ratings, and detailed product information to extract meaningful insights.
+The goal is to understand product popularity, customer satisfaction, and identify opportunities for improving data quality.
+Dataset Description
+The dataset consists of multiple CSV files, with each file corresponding to different melatonin products marked by unique ASINs.
+Data has been sourced from various e-commerce platforms and is structured for analysis in pandas DataFrames.
 
-Dataset
-The dataset includes several CSV files, each representing different melatonin products identified by their unique ASINs. The data was collated from multiple sources and loaded into pandas DataFrames for processing and analysis.
 
-Analysis Overview
-The code performs the following operations:
 
-Loads data from CSV files into pandas DataFrames.
-Conducts initial data exploration, such as checking the number of rows and columns and viewing the head of the DataFrames.
-Assesses data quality by checking for missing values across the datasets.
-Visualizes missing data distribution using seaborn's displot.
-Concatenates individual DataFrames into a single dataset for adults and kids.
-Cleans the data by dropping unnecessary columns and handling missing values.
-Extracts product strengths (in mg) from product titles using regular expressions.
-Aggregates data to analyze the distribution of average ratings per product.
-Visualizes the number of unique ASINs per product type.
-Describes the cleaned dataset to summarize key statistics.
+### Analysis Overview
+Data Loading: CSV files are read into pandas DataFrames for manipulation.
+Initial Exploration: Quick examination of the datasets including row/column counts and previewing data using DataFrame.head().
+Data Quality Assessment: Identification of missing values in the dataset.
+Visualization: Use seaborn's displot to showcase the distribution of missing data.
+Data Concatenation: Merge individual DataFrames into a comprehensive dataset for both adult and kid products.
+Data Cleaning: Removal of irrelevant columns and imputation of missing values.
+Feature Extraction: Use of regular expressions to derive product strength (mg) from titles.
+Data Aggregation: Calculation of average ratings per product for analysis.
+Visualization: Plot the count of unique ASINs for each product category.
+Descriptive Statistics: Summarization of the dataset post-cleaning to highlight key figures.
 Files in the Repository
-melatonin_analysis.ipynb: Jupyter notebook containing the analysis code.
-CSV files: Data files for each product analyzed.
-Dependencies
-pandas
-numpy
-matplotlib
-seaborn
-Usage
-To run this analysis, ensure that you have the above-listed Python libraries installed. Load the Jupyter notebook in an environment that supports .ipynb files, such as JupyterLab or VSCode, and execute the cells sequentially.
+melatonin_analysis.ipynb: The Jupyter notebook with the analysis code.
+CSV files: The datasets for each melatonin product subject to analysis.
 
-Insights
-The analysis revealed the number of unique products and their respective customer ratings.
-Identified the minimum average rating for each product title.
-Visualized the total reviews per year, indicating customer engagement over time.
-Future Work
-Expand the analysis to include additional e-commerce platforms for a comprehensive market view.
-Integrate sentiment analysis to gauge customer sentiment from review text data.
+
+### Dependencies
+pandas: For data manipulation and analysis.
+numpy: For numerical operations.
+matplotlib: For creating static, interactive, and animated visualizations.
+seaborn: For data visualization based on matplotlib.
+
+
+
+### Usage
+Install the required Python libraries mentioned in the Dependencies section.
+Open the melatonin_analysis.ipynb file in a compatible IDE like JupyterLab or VSCode.
+Run the cells in sequence to perform the analysis.
+Insights Gained
+Determined the count of unique products and their average customer ratings.
+Uncovered the lowest average rating associated with each product title.
+Charted the total number of reviews per year to assess customer interaction trends.
+### Future Work
+Broaden the scope of analysis to encompass more e-commerce platforms for a wider market analysis.
+Implement sentiment analysis to understand customer emotions within review texts.
 Contact Information
-For any further queries regarding this analysis, please reach out to Deshpande.shr@northeastern.edu.
-
+For inquiries about this analysis, please contact Deshpande.shr@northeastern.edu.
